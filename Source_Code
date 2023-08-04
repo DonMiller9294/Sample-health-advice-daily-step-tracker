@@ -1,0 +1,48 @@
+import tkinter as tk
+from tkinter import messagebox
+import random
+
+# Basic AI Health advice(for simplicity, using random advice)
+
+def get_health_advice():
+    health_advices = [
+                    "Drink plenty of water to stay hydrated.",
+                    "Get at least eight hours of sleep a night.",
+                    "It is recommended to get at least thirty minutes of exercise everyday.",
+                    "It is recommended to not exceed four hundred miligrams of caffeine a day",
+                    "Reading books can help strengthen the brain try to read a book a week.",
+                    "Eat a well balance diet rich with fruits and vegetables.",
+            ]
+    return random.choice(health_advices)
+
+# Function to handle daily steps
+def track_steps():
+    try:
+        steps = int(steps_entry.get())
+        if steps < 0:
+            raise ValueError("Steps cannot be negative.")
+            messagebox.showinfo("Success", f"steps tracked: {steps}")
+    except ValueError as e:
+                messagebox.showerror("Invalid Input", str(e))
+
+# Create the Tkinter GUI
+root = tk.Tk()
+root.title("Health Assistant")
+
+# Create GUI elements
+advice_label = tk.Label(root, text="Health Advice:", font=("Helvetica", 14))
+advice_label.pack(pady=10)
+
+health_advice = get_health_advice()
+advice_text = tk.Text(root, width=40, height=5, font=("Helvetica", 12))
+advice_text.insert(tk.END, health_advice)
+advice_text.config(state=tk.DISABLED)
+advice_text.pack()
+
+steps_label = tk.Label(root, text="Enter Daily Steps:", font=("Helvetica", 14))
+steps_label.pack()
+
+track_button = tk.Button(root, text="Track Steps", command=(track_steps))
+track_button.pack(pady=10)
+
+root.mainloop()
