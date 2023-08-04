@@ -1,0 +1,65 @@
+
+
+An health assistant that provides personalized health advice and tracks health-related data. This program is built using Python and includes a graphical user interface (GUI) for easy interaction.
+[THIS IS FOR SAMPLE PURPOSES ONLY, THIS DOES NOT REPLACE A TRAINED MEDICAL PROFESSIONAL!!!!]
+
+## Features
+
+- Get personalized health advice from the AI Health Assistant.
+- Track your daily steps and get feedback on your progress.
+
+## Requirements
+
+- Python 3.7 or higher
+- tkinter (already included with most Python installations)
+
+## Installation
+
+1. Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/your-username/ai-health-assistant.git
+```
+
+2. Change into the project directory:
+
+```bash
+cd ai-health-assistant
+```
+
+3. Run the AI Health Assistant program:
+
+```bash
+python main.py
+```
+
+## How to Use
+
+1. Launch the AI Health Assistant program by running source code
+2. The GUI will open, displaying a health advice text and an input field for daily steps.
+3. Read the health advice displayed on the GUI.
+4. Input your daily steps in the provided input field.
+5. Click on the "Track Steps" button to track your daily steps. You will receive feedback on the number of steps tracked.
+
+## Note
+
+This AI Health Assistant currently provides random health advice for demonstration purposes. For real-world use, you would need to integrate more sophisticated AI models and health data APIs to provide personalized advice.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contribution
+
+Contributions are welcome! If you find any bugs or have ideas for improvement, feel free to open an issue or submit a pull request.
+
+## About the Author
+
+- GitHub: [DonMiller9294](https://github.com/DonMiller9294)
+- LinkedIn: [Don Miller](https://https://www.linkedin.com/in/don9294)
+
+---
+
+Enjoy using the Health Assistant! If you have any questions or feedback, feel free to reach out.
+```
+
